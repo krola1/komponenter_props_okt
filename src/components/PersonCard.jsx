@@ -6,7 +6,7 @@
 // });
 
 // const test = module[`../assets/Img/${title}`];
-
+import { images } from "../assets/exports";
 export default function PersonCard(props) {
   //   console.log(module);
 
@@ -14,7 +14,7 @@ export default function PersonCard(props) {
     <>
       <p>Name: {props.name}</p>
       <p>Powerlevel: {props.age}</p>
-      {/* <img src={test} alt="" /> */}
+      <img src={images.hero} alt="" />
     </>
   );
 }
